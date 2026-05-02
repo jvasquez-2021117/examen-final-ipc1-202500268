@@ -25,8 +25,28 @@ public class Main {
         playlist.agregarCancion(cancion2);
         playlist.agregarCancion(cancion3);
 
+        System.out.println("=== LISTA INICIAL ===");
         playlist.mostrarPlaylist();
-        
+
+        System.out.println();
+        System.out.println("=== SIGUIENTE ===");
+        playlist.siguiente();
+
+        System.out.println();
+        System.out.println("=== SIGUIENTE ===");
+        playlist.siguiente();
+
+        System.out.println();
+        System.out.println("=== ANTERIOR ===");
+        playlist.anterior();
+
+        System.out.println();
+        System.out.println("=== ELIMINAR ACTUAL ===");
+        playlist.eliminarActual();
+
+        System.out.println();
+        System.out.println("=== LISTA FINAL ===");
+        playlist.mostrarPlaylist();
     }
     
 }
