@@ -19,11 +19,13 @@ public class Main {
         Cancion cancion2 = new Cancion("Viva La Vida", 242, "Coldplay");
         Cancion cancion3 = new Cancion("Bohemian Rhapsody", 354, "Queen");
 
-        System.out.println("=== PRUEBA DE POLIMORFISMO ===");
+        Playlist playlist = new Playlist();
 
-        cancion1.reproducir();
-        cancion2.reproducir();
-        cancion3.reproducir();
+        playlist.agregarCancion(cancion1);
+        playlist.agregarCancion(cancion2);
+        playlist.agregarCancion(cancion3);
+
+        playlist.mostrarPlaylist();
         
     }
     
